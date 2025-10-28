@@ -1,58 +1,12 @@
-   0.017778000s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint: fingerprint error for hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo)/Check { test: false }/TargetInner { name: "hello_cargo", doc: true, ..: with_path("C:\\Users\\korne\\projects\\rust\\hello_cargo\\src\\main.rs", Edition2024) }
-   0.017823900s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\korne\projects\rust\hello_cargo\target\debug\.fingerprint\hello_cargo-52212910c4bb598b\bin-hello_cargo`
-
-Caused by:
-    Nie można odnaleźć określonego pliku. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_path
-   6: git_filter_source_path
-   7: git_filter_source_path
-   8: git_filter_source_path
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_filter_source_repo
-  12: git_filter_source_repo
-  13: git_filter_source_repo
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.030116200s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint: fingerprint error for hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo)/Check { test: true }/TargetInner { name: "hello_cargo", doc: true, ..: with_path("C:\\Users\\korne\\projects\\rust\\hello_cargo\\src\\main.rs", Edition2024) }
-   0.030144400s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\korne\projects\rust\hello_cargo\target\debug\.fingerprint\hello_cargo-62853b5a06543bf0\test-bin-hello_cargo`
-
-Caused by:
-    Nie można odnaleźć określonego pliku. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_path
-   6: git_filter_source_path
-   7: git_filter_source_path
-   8: git_filter_source_path
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_filter_source_repo
-  12: git_filter_source_repo
-  13: git_filter_source_repo
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
+   0.015170500s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\korne\\projects\\rust\\hello_cargo\\src\\main.rs"
+   0.015197700s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\korne\\projects\\rust\\hello_cargo\\target\\debug\\.fingerprint\\hello_cargo-52212910c4bb598b\\dep-bin-hello_cargo"
+   0.015205300s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13406157229, nanos: 341725000 } < FileTime { seconds: 13406157332, nanos: 804347500 }
+   0.015621200s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint: fingerprint dirty for hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo)/Check { test: false }/TargetInner { name: "hello_cargo", doc: true, ..: with_path("C:\\Users\\korne\\projects\\rust\\hello_cargo\\src\\main.rs", Edition2024) }
+   0.015643300s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\korne\\projects\\rust\\hello_cargo\\target\\debug\\.fingerprint\\hello_cargo-52212910c4bb598b\\dep-bin-hello_cargo", reference_mtime: FileTime { seconds: 13406157229, nanos: 341725000 }, stale: "C:\\Users\\korne\\projects\\rust\\hello_cargo\\src\\main.rs", stale_mtime: FileTime { seconds: 13406157332, nanos: 804347500 } }))
+   0.016282600s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\korne\\projects\\rust\\hello_cargo\\src\\main.rs"
+   0.016294800s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\korne\\projects\\rust\\hello_cargo\\target\\debug\\.fingerprint\\hello_cargo-62853b5a06543bf0\\dep-test-bin-hello_cargo"
+   0.016299000s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13406157229, nanos: 341725000 } < FileTime { seconds: 13406157332, nanos: 804347500 }
+   0.016474300s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint: fingerprint dirty for hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo)/Check { test: true }/TargetInner { name: "hello_cargo", doc: true, ..: with_path("C:\\Users\\korne\\projects\\rust\\hello_cargo\\src\\main.rs", Edition2024) }
+   0.016489300s  INFO prepare_target{force=false package_id=hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo) target="hello_cargo"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\korne\\projects\\rust\\hello_cargo\\target\\debug\\.fingerprint\\hello_cargo-62853b5a06543bf0\\dep-test-bin-hello_cargo", reference_mtime: FileTime { seconds: 13406157229, nanos: 341725000 }, stale: "C:\\Users\\korne\\projects\\rust\\hello_cargo\\src\\main.rs", stale_mtime: FileTime { seconds: 13406157332, nanos: 804347500 } }))
     Checking hello_cargo v0.1.0 (C:\Users\korne\projects\rust\hello_cargo)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.14s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.15s
