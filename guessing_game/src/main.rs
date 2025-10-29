@@ -1,11 +1,38 @@
 use std::io; // Import the standard input/output library
+use rand::Rng; // Import the random number generator library
+use std::cmp::Ordering;
 
 fn main() {
     println!("Guess the number!");
-    println!("Please input your guess.");
-    let mut guess = String::new();
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
-    println!("You guessed: {guess}");
+    
+    let secret_number = rand::thread_rng().gen_range(1..=100);
+    //println!("The secret number is: {}", secret_number);
+
+    //cargo doc --open -> generate documentation and open it in the browser
+    
+    loop{
+        println!("Please input your guess.");
+
+        let mut guess = String::new();
+
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("Failed to read line");
+
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };    
+
+        println!("You guessed: {guess}");
+
+        match guess.cmp(&secret_number) {
+            Ordering::Equal => {
+                println!("You win!");
+                break;
+            }
+            Ordering::Greater => println!("Too big!"),
+            Ordering::Less =>println!("To small!"),  
+        }
+    }
 } 

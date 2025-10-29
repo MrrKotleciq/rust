@@ -9,6 +9,7 @@ fn main() {
 // cargo build --release -> compiles the project with optimizations for release, but takes longer to compile
 // cargo run -> compiles and runs the project in one step
 // cargo check -> checks the code for errors without producing an executable, faster than build
+// cargo clean -> removes the target directory with compiled files to free up space
 
 // less important commands:
 
