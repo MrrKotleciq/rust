@@ -1,7 +1,7 @@
 fn main() {
     println!("Hello, world!");
 }
-
+// this is hello_cargo file
 // important commands:
 
 // cargo new -> creates a new Rust project with this main.rs file as the entry point.
