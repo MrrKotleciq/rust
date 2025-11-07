@@ -39,7 +39,7 @@ fn main() {
     println!("\nThe 3rd value of tup is: {tup2}\n");
 
     let a: [i32; 5] = [1, 2, 3, 4, 5]; //array
-    let b = [3; 5]; //=[3, 3, 3, 3, 3]
+    let _b = [3; 5]; //=[3, 3, 3, 3, 3]
     let fourth = a[3];
     println!("This is the 4th element of 'a' array: {fourth}\n");
 
